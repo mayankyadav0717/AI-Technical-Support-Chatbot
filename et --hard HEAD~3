@@ -1,0 +1,36 @@
+[33mcommit 5bce8215a79c025671c1ecf67ec836b2f11877c1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Mayank Yadav <mayankyadav@gmail.com>
+Date:   Sun May 18 20:19:11 2025 +0200
+
+    updated scraper and pre_processing
+
+[33mcommit 4614ccc847aa83b91efe359fd2c2f43bab5c7cc3[m
+Author: Mayank Yadav <mayankyadav@gmail.com>
+Date:   Sun May 18 20:09:19 2025 +0200
+
+    updated scraper and pre-processing
+
+[33mcommit aa5db2117c443ffb70c2be0b889b93bda46045ef[m
+Author: Mayank Yadav <mayankyadav@gmail.com>
+Date:   Sun May 18 20:02:52 2025 +0200
+
+    Updated scraper and preprocessing script: added new data files
+
+[33mcommit c744d0442f8ba40b379f053674a7f1bef6b4e92a[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 0dd94f4 e77d67b
+Author: Mayank Yadav <mayankyadav@gmail.com>
+Date:   Sat May 17 18:58:52 2025 +0200
+
+    Merge branch 'main' of https://github.com/mayankyadav0717/AI-Technical-Support-Chatbot
+
+[33mcommit 0dd94f47723e176b33b29bba3ab04a106f2a7d3e[m
+Author: Mayank Yadav <mayankyadav@gmail.com>
+Date:   Sat May 17 18:56:22 2025 +0200
+
+    Intial commit with project files
+
+[33mcommit e77d67b9c8d49d9a4d86266601f6f609cbae178e[m
+Author: mayankyadav0717 <46219074+mayankyadav0717@users.noreply.github.com>
+Date:   Sat May 17 18:52:36 2025 +0200
+
+    Initial commit
