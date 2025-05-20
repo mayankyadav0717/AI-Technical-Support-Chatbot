@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "How do I install PyTorch with CUDA on Ubuntu?",
+    "input": "",
+    "output": "Use pip or conda following the official instructions. For pip: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118"
+  },
+  {
+    "instruction": "Why am I getting a CUDA out of memory error?",
+    "input": "",
+    "output": "This means your GPU doesn't have enough memory. Try reducing batch size, using gradient checkpointing, or offloading some operations to CPU."
+  },
+  {
+    "instruction": "What is the difference between torch.nn and torch.nn.functional?",
+    "input": "",
+    "output": "torch.nn provides layer classes like nn.ReLU(), while torch.nn.functional offers stateless functions like F.relu(). Use nn when you need layers with learnable parameters."
+  },
+  {
+    "instruction": "How do I use a Hugging Face model with my own dataset?",
+    "input": "",
+    "output": "Load your dataset using the datasets library, tokenize it with the model's tokenizer, then fine-tune using the Trainer class or custom loop."
+  },
+  {
+    "instruction": "How to fix 'ModuleNotFoundError: No module named transformers'?",
+    "input": "",
+    "output": "You need to install the transformers library using pip install transformers."
+  },
+  {
+    "instruction": "How do I perform inference using a LoRA fine-tuned model?",
+    "input": "",
+    "output": "Load the base model, then load the LoRA adapter using PeftModel.from_pretrained, and use model.generate() for inference."
+  },
+  {
+    "instruction": "What is quantization and why is it used?",
+    "input": "",
+    "output": "Quantization reduces model size and inference time by using lower precision (e.g. int8, 4-bit) instead of float32."
+  },
+  {
+    "instruction": "Why is my model not learning during training?",
+    "input": "",
+    "output": "Check for low learning rate, poor data quality, frozen layers, or vanishing gradients. Visualize loss and gradients to debug."
+  },
+  {
+    "instruction": "How do I fine-tune a language model using PEFT and LoRA?",
+    "input": "",
+    "output": "Wrap the base model with get_peft_model using a LoraConfig, and use Trainer to train the model on instruction-formatted data."
+  },
+  {
+    "instruction": "What does 'device_map=auto' do in transformers?",
+    "input": "",
+    "output": "It automatically distributes the model layers across available GPUs and CPU to optimize memory usage."
+  },
+  {
+    "instruction": "Why does Hugging Face tokenizer give a padding warning?",
+    "input": "",
+    "output": "The model might not have a pad_token defined. You can set it manually: tokenizer.pad_token = tokenizer.eos_token."
+  },
+  {
+    "instruction": "How do I log training progress using Hugging Face Trainer?",
+    "input": "",
+    "output": "Use the logging_steps argument in TrainingArguments, and set report_to to 'tensorboard' or 'none' as needed."
+  },
+  {
+    "instruction": "How can I reduce memory usage while training transformers?",
+    "input": "",
+    "output": "Use techniques like gradient checkpointing, 8-bit/4-bit quantization, LoRA, smaller batch sizes, or Deepspeed."
+  },
+  {
+    "instruction": "What is the difference between eval_loss and train_loss?",
+    "input": "",
+    "output": "train_loss is computed on training data and updates weights; eval_loss is calculated on validation data to monitor overfitting."
+  },
+  {
+    "instruction": "How do I download a model from Hugging Face with a specific revision?",
+    "input": "",
+    "output": "Use the revision argument in from_pretrained: model = AutoModel.from_pretrained('model_name', revision='commit_hash')"
+  },
+  {
+    "instruction": "What is LoRA in PEFT?",
+    "input": "",
+    "output": "LoRA (Low-Rank Adaptation) freezes the base model and trains small adapter weights, enabling efficient fine-tuning."
+  },
+  {
+    "instruction": "How can I check which layers are trainable in my PEFT model?",
+    "input": "",
+    "output": "Call model.print_trainable_parameters() to see which weights are being updated during training."
+  },
+  {
+    "instruction": "What does attention_mask do in transformers?",
+    "input": "",
+    "output": "It tells the model which tokens to attend to (1) and which to ignore (0), especially useful for padded inputs."
+  },
+  {
+    "instruction": "Why is my model generating repetitive outputs?",
+    "input": "",
+    "output": "Try adjusting temperature, top_k, or top_p in generation settings. Repetition often occurs with greedy decoding or low diversity."
+  },
+  {
+    "instruction": "How to evaluate model performance on a test set?",
+    "input": "",
+    "output": "Compute perplexity, BLEU, ROUGE, or accuracy depending on your task. Use a consistent set of test prompts."
+  }
+]
