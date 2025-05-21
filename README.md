@@ -125,17 +125,6 @@ Captures sequence overlap structure and phrase alignment.
 
 ![ROUGE-L Comparison](./results/rouge_comparison.png)
 
----
-
-## 📌 Daily Log Insights
-
-Throughout the project:
-
-* Learned the efficiency of **LoRA adapters** (only a small fraction of weights are trained).
-* Used `bnb_4bit_quant_type="nf4"` to run LLaMA on RTX 3060 in 4-bit precision.
-* Fine-tuned with `r=16`, `alpha=32`, and `dropout=0.05`.
-* Understood metric trade-offs: BLEU is strict, ROUGE-L captures structure better, and log-likelihood reflects internal model confidence.
-* Created an inference-ready chatbot CLI using the merged model, with no reliance on internet or cloud services.
 
 ---
 
@@ -143,12 +132,4 @@ Throughout the project:
 
 This project is licensed under the MIT License.
 
----
 
-Let me know if you'd like:
-
-* A Markdown export of this
-* The CLI chatbot script named properly as `chatbot_cli.py`
-* Docker packaging for deployment
-
-Would you like me to automatically generate the chatbot CLI if it’s not already present?
